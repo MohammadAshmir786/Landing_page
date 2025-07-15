@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-links{
+  font-weight: 600;
+}
+
+.nav-links.active {
+  color: #2b7fff !important;
+}
+
+.nav-tabs{
+  padding: 10px 20px;
+}
+
+#home {
+  background: url("./src/assets/hero_bg.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  height: 80vh;
+}
+
+#home:before{
+  content: "";
+  background: rgba(18, 30, 68, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-content{
+  position: inherit;
+  z-index: 2;
+}
